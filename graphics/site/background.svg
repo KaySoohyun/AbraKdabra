@@ -17,8 +17,8 @@
    inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="background.svg"
    inkscape:export-filename="/home/kona/mySite/AbraKdabra/graphics/site/background2.png"
-   inkscape:export-xdpi="200"
-   inkscape:export-ydpi="200">
+   inkscape:export-xdpi="70.400002"
+   inkscape:export-ydpi="70.400002">
   <defs
      id="defs13867">
     <clipPath
@@ -125,9 +125,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497476"
-     inkscape:cx="776.64404"
-     inkscape:cy="400.59813"
+     inkscape:zoom="0.35000001"
+     inkscape:cx="806.86321"
+     inkscape:cy="317.8631"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -147,7 +147,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
