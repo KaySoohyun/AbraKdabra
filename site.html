@@ -6,21 +6,21 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 
-
+<!-- TODO Responsive fonts -->
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Mali", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #fce883;}
 .menu {display: none}
-
+h3.one{text-indent: 50px;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-
 
 <body class="w3-amber">
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -53,7 +53,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Mali", sans-serif}
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-amber w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
       <a href="#salon" class="w3-bar-item w3-button" style="width:25% !important">SALON</a>
       <a href="#fiestas" class="w3-bar-item w3-button" style="width:25% !important">FIESTAS</a>
       <a href="#ubicacion" class="w3-bar-item w3-button" style="width:25% !important">UBICACION</a>
@@ -61,10 +60,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Mali", sans-serif}
     </div>
   </div>
   
-  <!-- Esta linea hace que el contenido de la pag este al lado de la navbar y no abajo -->
+  <!-- Esta linea hace que el contenido de la pag este al lado de la navbar y no debajo -->
   <div class="w3-padding-large" id="main">
   
-    <!-- Header -->
+    <!-- INICIO -->
     <!-- TODO Fondo y logo -->
     <header class="w3-display-container w3-center" id="#">
       <img class="mx-auto d-block img-fluid" alt="fondo" src="graphics/site/background2.png"> 
@@ -76,116 +75,144 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Mali", sans-serif}
 
 
     <!-- SALON Container -->
-    <div class="w3-content w3-container w3-padding-64" id="salon">
-      <h1 class="w3-center">Salon</h1>
-      <p class="w3-center">El salon es un espacio muy amplio.<br>Cuenta con un sectores para chicos y adultos</em></p><br>
-
-      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-          <img src="cake.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sector adultos">
+    <div class="w3-container w3-padding-64 w3-large" id="salon">
+      <h1 class="w3-center w3-jumbo">SALON</h1>
+      <p class="w3-center">El salon es un espacio muy amplio.<br>Cuenta con un sectores para chicos y adultos</p><br>
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col m4">
+          <h4><b>Podes encontrar:</b></h4>
+          <h4><ul style="list-style-type:circle">
+            <li>Globos y piñata.</li>
+            <li>Fiesta disco.</li>
+            <li>Rincón fotográfico.</li>
+            <li>Juegos y plaza blanda.</li>
+            <li>Coordinacion para niños en juegos de competencia y baile.</li>
+            <li>Atención a la mesa de adultos.</li>
+            <li>Aire acondicionado (sector adultos).</li>
+            <li>Descartables para niños y adultos.</li>
+            <li>Wi fi.</li>
+          </ul></h4>
         </div>
-
-        <div class="w3-col m3">
-          <img src="cake.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aseo">
+        <div class="w3-col m8">
+            <img src="cake.png" style="width:50%" alt="Sector adultos">
         </div>
-
-        <div class="w3-col m3">
-          <img src="cake.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rincon Fotografico">
-        </div>
-
-        <div class="w3-col m3">
-          <div class="w3-display-container w3-hover-opacity" style="width:100%">
-            <img src="cake.png" style="width:100%" alt="Plaza blanda">
-            <div class="w3-display-bottommiddle w3-display-hover w3-xlarge">
-              <p>Muffin</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal for full size images on click-->
-    <!-- TODO Not working-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
       </div>
     </div>
 
 
 
     <!-- FIESTAS Container -->
-    <div class="w3-container w3-amber w3-padding-64 w3-xxlarge" id="fiestas">
+    <div class="w3-container w3-padding-64 w3-large" id="fiestas">
       <div class="w3-content">
       
         <h1 class="w3-center w3-jumbo">FIESTAS</h1>
-        <p>Todos las fiestas incluyen:<br>Capacidad para 25 niños y 20 adultos (se cobrará por cada persona extra).<br>Duración de 3 horas.<br>25 tarjetas de invitaciones.<br>3 coordinadores  (1 para adultos,  2 para  niños).<br>Set de merienda (traer yerba y azucar).</p>
-
+        <h4><b>Todas las fiestas incluyen:</b></h4>
+        <h4><ul style="list-style-type:circle">
+          <li>Capacidad para 25 niños y 20 adultos (se cobrará por cada persona extra).</li>
+          <li>Duración de 3 horas.</li>
+          <li>25 tarjetas de invitaciones.</li>
+          <li>3 coordinadores (1 para adultos, 2 para niños).</li>
+          <li>Set de merienda (traer yerba y azucar).</li>
+        </ul></h4>
+      
         <div class="w3-row w3-center">
           <a href="javascript:void(0)" onclick="openMenu(event, 'op1');" id="myLink">
-            <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Opcion 1</div>
+            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Opcion 1</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'op2');">
-            <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Opcion 2</div>
+            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Opcion 2</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'extra');">
-            <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Extras</div>
+            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Extras</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'hs');">
+            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Horarios</div>
           </a>
         </div>
 
         <div id="op1" class="w3-container menu w3-padding-32 w3-yellow">
-          <p><b>Uso completo del salón y todas las actividades del mismo.</b></p>
-          <p>Lunes a Viernes:</p>
-          <p> Tarde<span class="w3-right w3-tag w3-purple w3-round">$1250</span></p>
-          <p> Noche<span class="w3-right w3-tag w3-purple w3-round">$2750</span></p>
-          <p>Sábados,  Domingo y feriados:<span class="w3-right w3-tag w3-purple w3-round">$3050</span></p>
-          <p>Por cada niño extra:<span class="w3-right w3-tag w3-purple w3-round">$6</span></p>
-          <p>Por cada adulto extra:<span class="w3-right w3-tag w3-purple w3-round">$10</span></p>
+          <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
+          <h3>Lunes a Viernes:</h3>
+          <h3 class="one">Tarde<span class="w3-right w3-tag w3-purple w3-round">$1250</span></h3>
+          <h3 class="one">Noche<span class="w3-right w3-tag w3-purple w3-round">$2750</span></h3>
+          <h3>Sábados,  Domingo y feriados<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
+          <h3>Por cada niño extra<span class="w3-right w3-tag w3-purple w3-round">$6</span></h3>
+          <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
         </div>
 
         <div id="op2" class="w3-container menu w3-padding-32 w3-yellow">
-          <h1><b>Titulo innecesario 2</b> <span class="w3-right w3-tag w3-purple w3-round">$1450</span></h1>
-          <p class="w3-text-grey">Uso completo y comida</p>
+          <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
+          <h3><b>Snack*, panchos y gaseosas** libres para NIÑOS.</b></h3>
+          <h3>Lunes a Viernes:</h3>
+          <h3>Tarde<span class="w3-right w3-tag w3-purple w3-round">$2300</span></h3>
+          <h3>Noche<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
+          <h3>Sábados,  Domingo y feriados<span class="w3-right w3-tag w3-purple w3-round">$3550</span></h3>
+          <h3>Por cada niño extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
+          <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
+          <h5 class="w3-text-dark-grey">*Chizitos, palitos, papitas, nachos, pururu, tutucas, dulcitas, puflitos, pizzetitas.<br>**Linea coca cola o pepsi.</h5>
         </div>
 
         <div id="extra" class="w3-container menu w3-padding-32 w3-yellow">
-          <h1><b>Teen</b> <span class="w3-right w3-tag w3-purple w3-round">$850</span></h1>
-          <p class="w3-text-grey">Tragos sin alcohol</p>
-
+          <h3><b>Maquillaje artistico</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
+          <h3><b>Globologia</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
+          <h3><b>Torta</b> <span class="w3-right w3-tag w3-purple w3-round">$450</span></h3>
+          <h3><b>Fiesta teen</b> <span class="w3-right w3-tag w3-purple w3-round">$750</span></h3>
+          <h3 class="one">Incluye tragos sin alcohol y mucho más!</h3>
+          <h3><b>Mas de 60 personas</b> <span class="w3-right w3-tag w3-purple w3-round">$300</span></h3>
+          <h3 class="one">Incluye un coordinador extra!</h3>
         </div>
-  
+        
+        <div id="hs" class="w3-container menu w3-padding-32 w3-yellow">
+          <h3><b>Lunes a Viernes:</b></h3>
+          <h3 class="one">Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
+          <h3 class="one">Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
+          <h3><b>Sábados, Domingos y feriados:</b></h3>
+          <h3 class="one">Mañana (Con 10% de Descuento)<span class="w3-right w3-tag w3-purple w3-round">11 a 14h</span></h3>
+          <h3 class="one">Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
+          <h3 class="one">Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
+        </div>
+
+        <br>
+      
+        <h2><b>Advertencias y pagos</b></h2>
+        <h4><ul style="list-style-type:circle">
+          <li>Se debe abonar una seña de $400 (sin devolución).</li>
+          <li>Si abona con tarjeta de crédito hay un recargo del 20% y el pago debe realizarse con 48h de anticipación.</li>
+          <li>Se ingresa al salón 15 min antes.</li>
+          <li>Hay 15 min de tolerancia a la salida, caso contrario deberá abonar $300 extras.</li>
+          <li>Están prohibidas las bebidas alcohólicas y fumar dentro del salon.</li>
+          <li>Capacidad máxima: 80 personas (entre niños y adultos)</li>
+        </ul></h4>
+        
       </div>
-      <p class="w3-text-black">Advertencias</p>
     </div>
 
 
-    <!-- Contact (with google maps) -->
-    <div id="contacto" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
-
-    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
-      <div class="w3-content">
-        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
-        <p>Find us at some address at some place or call us at 05050515-122330</p>
-        <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-        <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <!-- UBICACION (with google maps) -->
+    <div class="w3-container w3-padding-64 w3-large" id="ubicacion"></div>
+      <h1 class="w3-center w3-jumbo">UBICACION</h1>
+      <div class="w3-grayscale-max" style="width:100%;height:400px" id="googleMap"></div>
+      
+    <!-- CONTACTO -->
+    <div class="w3-container w3-content w3-padding-64 w3-large" id="contacto">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CONTACTO</h1>
+        <h2><i class="fa fa-phone fa-fw w3-text-purple w3-xxlarge w3-margin-right"></i>Telefono: 314159265</h2>
+        <h2><i class="fa fa-envelope fa-fw w3-text-purple w3-xxlarge w3-margin-right"> </i>Email: abrakdabra@gmail.com</h2>
+        <br>
+        <h2>Podes dejarnos un mensaje y nosotros te contactamos:</h2>
         <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-          <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Consultas" required name="Consultas"></p>
+          <p><button class="w3-button w3-light-grey" type="submit">Enviar mensaje</button></p>
         </form>
-      </div>
     </div>
-
+    
+    
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Kona" target="_blank" class="w3-hover-text-green">kona</a></p>
+    <footer class="w3-center w3-purple w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
+      <p>Powered by <a href="https://github.com/KaySoohyun" title="KaySoohyun" target="_blank" class="w3-hover-text-green">KaySoohyun</a></p>
     </footer>
 
     <!-- Add Google Maps -->
