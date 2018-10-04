@@ -3,50 +3,37 @@
 <title>AbraKdabra</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-
-<!-- TODO Responsive fonts -->
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Mali", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #fce883;}
-.menu {display: none}
-h3.one{text-indent: 50px;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+<link rel="stylesheet" href="fontMali.css">
+<link rel="stylesheet" href="mysite.css">
 
 <body class="w3-amber">
+  <!-- TODO UBICACION y CONTACTO no estan centrados -->
+  <!-- TODO hacer iconos? -->
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
-    <!-- TODO Aca poner logo miniatura -->
-    <img src="graphics/site/logo.svg" style="width:100%">
+    <img src="graphics/site/topNavbar.svg" style="width:100%">
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
-      <i class="fa fa-star w3-xxlarge"></i>
-      <p>INICIO</p>
+      <i class="fa fa-star w3-xxlarge w3-text-deep-orange"></i>
+      <h6>INICIO</h6>
     </a>
     <a href="#salon" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>SALON</p>
+      <i class="fa fa-home w3-xxlarge w3-text-blue"></i>
+      <h6>SALON</h6>
     </a>
     <a href="#fiestas" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
-      <i class="fa fa-birthday-cake w3-xxlarge"></i>
-      <p>FIESTAS</p>
+      <i class="fa fa-birthday-cake w3-xxlarge w3-text-red"></i>
+      <h6>FIESTAS</h6>
     </a>
     <a href="#ubicacion" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
-      <i class="fa fa-map  w3-xxlarge"></i>
-      <p>UBICACION</p>
+      <i class="fa fa-map  w3-xxlarge w3-text-light-green"></i>
+      <h6>UBICACION</h6>
     </a>
       <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>CONTACTO</p>
+      <i class="fa fa-user w3-xxlarge w3-text-pink"></i>
+      <h6>CONTACTO</h6>
     </a>
   </nav>
 
@@ -62,9 +49,10 @@ h3.one{text-indent: 50px;}
   
   <!-- Esta linea hace que el contenido de la pag este al lado de la navbar y no debajo -->
   <div class="w3-padding-large" id="main">
-  
-    <!-- INICIO -->
+
+
     <!-- TODO Fondo y logo -->
+    <!-- INICIO -->
     <header class="w3-display-container w3-center" id="#">
       <img class="mx-auto d-block img-fluid" alt="fondo" src="graphics/site/background2.png"> 
       <div class="w3-padding w3-display-middle">
@@ -75,9 +63,8 @@ h3.one{text-indent: 50px;}
 
 
     <!-- SALON Container -->
-    <div class="w3-container w3-padding-64 w3-large" id="salon">
+    <div class="w3-container w3-padding-48 w3-large" id="salon">
       <h1 class="w3-center w3-jumbo">SALON</h1>
-      <p class="w3-center">El salon es un espacio muy amplio.<br>Cuenta con un sectores para chicos y adultos</p><br>
       <div class="w3-row-padding w3-section">
         <div class="w3-col m4">
           <h4><b>Podes encontrar:</b></h4>
@@ -94,15 +81,50 @@ h3.one{text-indent: 50px;}
           </ul></h4>
         </div>
         <div class="w3-col m8">
-            <img src="cake.png" style="width:50%" alt="Sector adultos">
+          <div class="w3-row-padding w3-center w3-padding-64">
+          
+            <div class="w3-col m6 ">
+              <img src="graphics/salon/adultos.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Sector adultos">
+            </div>
+
+            <div class="w3-col m6">
+              <img src="graphics/salon/cocina.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Cocina">
+            </div>
+
+            <div class="w3-col m6">
+              <img src="graphics/salon/cama.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Cama elastica">
+            </div>
+
+            <div class="w3-col m6">
+              <img src="graphics/salon/ninos.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Sector niños">
+            </div>
+            
+            <div class="w3-col m6">
+              <img src="graphics/salon/castillo.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Castillo inflable">
+            </div>
+            
+            <div class="w3-col m6">
+              <img src="graphics/salon/trepador.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Trepador">
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-amber w3-center" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-hover-amber w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+        <img id="img01" class="w3-image" style="width:100%">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>   
 
-
+    
+    <!-- TODO Color de los botones -->
     <!-- FIESTAS Container -->
-    <div class="w3-container w3-padding-64 w3-large" id="fiestas">
+    <div class="w3-container w3-padding-48 w3-large" id="fiestas">
       <div class="w3-content">
       
         <h1 class="w3-center w3-jumbo">FIESTAS</h1>
@@ -115,66 +137,66 @@ h3.one{text-indent: 50px;}
           <li>Set de merienda (traer yerba y azucar).</li>
         </ul></h4>
       
-        <div class="w3-row w3-center">
+        <div class="w3-row w3-center w3-amber">
           <a href="javascript:void(0)" onclick="openMenu(event, 'op1');" id="myLink">
-            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Opcion 1</div>
+            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Opcion 1</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'op2');">
-            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Opcion 2</div>
+            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Opcion 2</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'extra');">
-            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Extras</div>
+            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Extras</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'hs');">
-            <div class="w3-quarter s4 tablink w3-padding-large w3-hover-purple" style="font-size:2vw">Horarios</div>
+            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Horarios</div>
           </a>
         </div>
 
-        <div id="op1" class="w3-container menu w3-padding-32 w3-yellow">
+        <div id="op1" class="w3-container menu w3-padding w3-yellow">
           <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
           <h3>Lunes a Viernes:</h3>
-          <h3 class="one">Tarde<span class="w3-right w3-tag w3-purple w3-round">$1250</span></h3>
-          <h3 class="one">Noche<span class="w3-right w3-tag w3-purple w3-round">$2750</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">$1250</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">$2750</span></h3>
           <h3>Sábados,  Domingo y feriados<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
           <h3>Por cada niño extra<span class="w3-right w3-tag w3-purple w3-round">$6</span></h3>
           <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
         </div>
 
-        <div id="op2" class="w3-container menu w3-padding-32 w3-yellow">
+        <div id="op2" class="w3-container menu w3-padding w3-yellow">
           <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
           <h3><b>Snack*, panchos y gaseosas** libres para NIÑOS.</b></h3>
           <h3>Lunes a Viernes:</h3>
-          <h3>Tarde<span class="w3-right w3-tag w3-purple w3-round">$2300</span></h3>
-          <h3>Noche<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">$2300</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
           <h3>Sábados,  Domingo y feriados<span class="w3-right w3-tag w3-purple w3-round">$3550</span></h3>
           <h3>Por cada niño extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
           <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
           <h5 class="w3-text-dark-grey">*Chizitos, palitos, papitas, nachos, pururu, tutucas, dulcitas, puflitos, pizzetitas.<br>**Linea coca cola o pepsi.</h5>
         </div>
 
-        <div id="extra" class="w3-container menu w3-padding-32 w3-yellow">
+        <div id="extra" class="w3-container menu w3-padding w3-yellow">
           <h3><b>Maquillaje artistico</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
           <h3><b>Globologia</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
           <h3><b>Torta</b> <span class="w3-right w3-tag w3-purple w3-round">$450</span></h3>
           <h3><b>Fiesta teen</b> <span class="w3-right w3-tag w3-purple w3-round">$750</span></h3>
-          <h3 class="one">Incluye tragos sin alcohol y mucho más!</h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Incluye tragos sin alcohol y mucho más!</h3>
           <h3><b>Mas de 60 personas</b> <span class="w3-right w3-tag w3-purple w3-round">$300</span></h3>
-          <h3 class="one">Incluye un coordinador extra!</h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Incluye un coordinador extra!</h3>
         </div>
         
-        <div id="hs" class="w3-container menu w3-padding-32 w3-yellow">
+        <div id="hs" class="w3-container menu w3-padding w3-yellow">
           <h3><b>Lunes a Viernes:</b></h3>
-          <h3 class="one">Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
-          <h3 class="one">Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
           <h3><b>Sábados, Domingos y feriados:</b></h3>
-          <h3 class="one">Mañana (Con 10% de Descuento)<span class="w3-right w3-tag w3-purple w3-round">11 a 14h</span></h3>
-          <h3 class="one">Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
-          <h3 class="one">Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Mañana (Con 10% de Descuento)<span class="w3-right w3-tag w3-purple w3-round">11 a 14h</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
+          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
         </div>
 
         <br>
-      
-        <h2><b>Advertencias y pagos</b></h2>
+
+        <h2><b><span class="w3-tag w3-padding w3-round-large w3-purple w3-center">Advertencias y pagos</span></b></h2>
         <h4><ul style="list-style-type:circle">
           <li>Se debe abonar una seña de $400 (sin devolución).</li>
           <li>Si abona con tarjeta de crédito hay un recargo del 20% y el pago debe realizarse con 48h de anticipación.</li>
@@ -187,17 +209,22 @@ h3.one{text-indent: 50px;}
       </div>
     </div>
 
-
+    
+    <!-- TODO Colocar bien el mapa -->
     <!-- UBICACION (with google maps) -->
-    <div class="w3-container w3-padding-64 w3-large" id="ubicacion"></div>
+    <div class="w3-container w3-padding-48 w3-large" id="ubicacion">
       <h1 class="w3-center w3-jumbo">UBICACION</h1>
+      <h3 class="w3-center">Nombre de calle numero, barrio, ciudad, provincia, pais.</h3>
       <div class="w3-grayscale-max" style="width:100%;height:400px" id="googleMap"></div>
-      
+    </div>
+
+    
+    <!-- TODO Hacer iconos? -->
     <!-- CONTACTO -->
-    <div class="w3-container w3-content w3-padding-64 w3-large" id="contacto">
-        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CONTACTO</h1>
-        <h2><i class="fa fa-phone fa-fw w3-text-purple w3-xxlarge w3-margin-right"></i>Telefono: 314159265</h2>
-        <h2><i class="fa fa-envelope fa-fw w3-text-purple w3-xxlarge w3-margin-right"> </i>Email: abrakdabra@gmail.com</h2>
+    <div class="w3-container w3-content w3-padding-48 w3-large" id="contacto">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:32px">CONTACTO</h1>
+        <h3><i class="fa fa-phone fa-fw w3-text-purple w3-xxlarge w3-margin-right"></i>Telefono: 314159265</h3>
+        <h3><i class="fa fa-envelope fa-fw w3-text-purple w3-xxlarge w3-margin-right"> </i>Email: abrakdabra@gmail.com</h3>
         <br>
         <h2>Podes dejarnos un mensaje y nosotros te contactamos:</h2>
         <form action="/action_page.php" target="_blank">
@@ -207,16 +234,18 @@ h3.one{text-indent: 50px;}
           <p><button class="w3-button w3-light-grey" type="submit">Enviar mensaje</button></p>
         </form>
     </div>
-    
+
     
     <!-- Footer -->
-    <footer class="w3-center w3-purple w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
-      <p>Powered by <a href="https://github.com/KaySoohyun" title="KaySoohyun" target="_blank" class="w3-hover-text-green">KaySoohyun</a></p>
+    <footer class="w3-center w3-hover-purple w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#" class="w3-button w3-purple w3-hover-amber"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
+      <p>Powered by <a href="https://github.com/KaySoohyun" title="KaySoohyun" target="_blank" class="w3-hover-text-amber">KaySoohyun</a></p>
     </footer>
 
-    <!-- Add Google Maps -->
+    
+    <!-- scripts   -->
     <script>
+    // GoogleMaps
     function myMap()
     {
       myCenter=new google.maps.LatLng(41.878114, -87.629798);
@@ -232,7 +261,16 @@ h3.one{text-indent: 50px;}
       });
       marker.setMap(map);
     }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
 
+    // Display Fiesta's options
     function openMenu(evt, menuName) {
       var i, x, tablinks;
       x = document.getElementsByClassName("menu");
@@ -249,7 +287,6 @@ h3.one{text-indent: 50px;}
     document.getElementById("myLink").click();
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-
 
   </div>
 </body>
