@@ -16,7 +16,7 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
-    <img src="graphics/site/topNavbar.svg" style="width:100%">
+    <img class="w3-image" src="graphics/site/topNavbar.svg">
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
       <i class="fa fa-star w3-xxlarge w3-text-deep-orange"></i>
       <h6>INICIO</h6>
@@ -42,10 +42,10 @@
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-amber w3-opacity w3-hover-amber w3-hover-opacity-off w3-center w3-small">
-      <a href="#salon" class="w3-bar-item w3-button" style="width:25% !important">SALON</a>
-      <a href="#fiestas" class="w3-bar-item w3-button" style="width:25% !important">FIESTAS</a>
-      <a href="#ubicacion" class="w3-bar-item w3-button" style="width:25% !important">UBICACION</a>
-      <a href="#contacto" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO</a>
+      <a href="#salon" class="w3-bar-item w3-button" style="width:25%">SALON</a>
+      <a href="#fiestas" class="w3-bar-item w3-button" style="width:25%">FIESTAS</a>
+      <a href="#ubicacion" class="w3-bar-item w3-button" style="width:25%">UBICACION</a>
+      <a href="#contacto" class="w3-bar-item w3-button" style="width:25%">CONTACTO</a>
     </div>
   </div>
   
@@ -56,7 +56,7 @@
     <!-- TODO Fondo y logo -->
     <!-- INICIO -->
     <header class="w3-display-container w3-center" id="#">
-      <img class="mx-auto d-block img-fluid" alt="fondo" src="graphics/site/background2.png"> 
+      <img class="w3-image" src="graphics/site/background2.png" alt="background" > 
       <div class="w3-padding w3-display-middle">
         <h1 class="w3-center">AbraKdabra</h1>
         <h3>Salon de fiestas infantiles</h3>
@@ -65,61 +65,55 @@
 
 
     <!-- SALON Container -->
-    <div class="w3-container w3-padding-48 w3-large" id="salon">
+    <div class="w3-container w3-large w3-padding-48" id="salon">
       <h1 class="w3-center">SALON</h1>
-      <div class="w3-row-padding w3-section">
-        <div class="w3-col m4">
-          <h4><b>Podes encontrar:</b></h4>
-          <h5><ul style="list-style-type:circle">
-            <li>Globos y piñata.</li>
-            <li>Fiesta disco.</li>
-            <li>Rincón fotográfico.</li>
-            <li>Juegos y plaza blanda.</li>
-            <li>Coordinacion para niños en juegos de competencia y baile.</li>
-            <li>Atención a la mesa de adultos.</li>
-            <li>Aire acondicionado (sector adultos).</li>
-            <li>Descartables para niños y adultos.</li>
-            <li>Wi fi.</li>
-          </ul></h5>
+      <div class="w3-third w3-container w3-left l4 m5 s12" style="width:35%">
+        <h4><b>Podes encontrar:</b></h4>
+        <h5><ul style="list-style-type:circle">
+          <li>Globos y piñata.</li>
+          <li>Fiesta disco.</li>
+          <li>Rincón fotográfico.</li>
+          <li>Juegos y plaza blanda.</li>
+          <li>Coordinacion para niños en juegos de competencia y baile.</li>
+          <li>Atención a la mesa de adultos.</li>
+          <li>Aire acondicionado (sector adultos).</li>
+          <li>Descartables para niños y adultos.</li>
+          <li>Wi fi.</li>
+        </ul></h5>
+      </div>
+      <div class="w3-rest w3-container w3-center w3-padding-48 l8 m7 s12"> 
+        <div class="w3-col m6">
+          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/adultos.jpg" onclick="onClick(this)" alt="Sector adultos">
         </div>
-        <div class="w3-col m8">
-          <div class="w3-row-padding w3-center w3-padding-64">
-          
-            <div class="w3-col m6 ">
-              <img src="graphics/salon/adultos.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Sector adultos">
-            </div>
 
-            <div class="w3-col m6">
-              <img src="graphics/salon/cocina.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Cocina">
-            </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/cocina.jpg" onclick="onClick(this)" alt="Cocina">
+        </div>
 
-            <div class="w3-col m6">
-              <img src="graphics/salon/cama.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Cama elastica">
-            </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/cama.jpg" onclick="onClick(this)" alt="Cama elastica">
+        </div>
 
-            <div class="w3-col m6">
-              <img src="graphics/salon/ninos.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Sector niños">
-            </div>
-            
-            <div class="w3-col m6">
-              <img src="graphics/salon/castillo.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Castillo inflable">
-            </div>
-            
-            <div class="w3-col m6">
-              <img src="graphics/salon/trepador.jpg" style="width:50%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="Trepador">
-            </div>
-            
-          </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/ninos.jpg" onclick="onClick(this)" alt="Sector niños">
+        </div>
+        
+        <div class="w3-col m6">
+          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/castillo.jpg" onclick="onClick(this)" alt="Castillo inflable">
+        </div>
+        
+        <div class="w3-col m6">
+          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/trepador.jpg" onclick="onClick(this)" alt="Trepador">
         </div>
       </div>
     </div>
 
     <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-amber w3-center" onclick="this.style.display='none'">
+    <div class="w3-modal w3-amber w3-center" onclick="this.style.display='none'" id="modal01">
       <span class="w3-button w3-large w3-hover-amber w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
       <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
-        <img id="img01" class="w3-image" style="width:100%">
-        <p id="caption" class="w3-opacity w3-large"></p>
+        <img class="w3-image" style="width:100%" id="img01">
+        <p class="w3-opacity w3-large" id="caption"></p>
       </div>
     </div>   
 
@@ -127,7 +121,6 @@
     <!-- TODO Color de los botones -->
     <!-- FIESTAS Container -->
     <div class="w3-container w3-padding-48 w3-large" id="fiestas">
-      <div class="w3-content">
       
         <h1 class="w3-center">FIESTAS</h1>
         <h4><b>Todas las fiestas incluyen:</b></h4>
@@ -154,7 +147,7 @@
           </a>
         </div>
 
-        <div id="op1" class="w3-container menu w3-padding w3-yellow">
+        <div class="w3-container menu w3-padding w3-yellow" id="op1">
           <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
           <h3>Lunes a Viernes:</h3>
           <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">$1250</span></h3>
@@ -164,7 +157,7 @@
           <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
         </div>
 
-        <div id="op2" class="w3-container menu w3-padding w3-yellow">
+        <div class="w3-container menu w3-padding w3-yellow" id="op2">
           <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
           <h3><b>Snack*, panchos y gaseosas** libres para NIÑOS.</b></h3>
           <h3>Lunes a Viernes:</h3>
@@ -176,7 +169,7 @@
           <h5 class="w3-text-dark-grey">*Chizitos, palitos, papitas, nachos, pururu, tutucas, dulcitas, puflitos, pizzetitas.<br>**Linea coca cola o pepsi.</h5>
         </div>
 
-        <div id="extra" class="w3-container menu w3-padding w3-yellow">
+        <div class="w3-container menu w3-padding w3-yellow" id="extra">
           <h3><b>Maquillaje artistico</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
           <h3><b>Globologia</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
           <h3><b>Torta</b> <span class="w3-right w3-tag w3-purple w3-round">$450</span></h3>
@@ -186,7 +179,7 @@
           <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Incluye un coordinador extra!</h3>
         </div>
         
-        <div id="hs" class="w3-container menu w3-padding w3-yellow">
+        <div class="w3-container menu w3-padding w3-yellow" id="hs">
           <h3><b>Lunes a Viernes:</b></h3>
           <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
           <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
@@ -208,7 +201,6 @@
           <li>Capacidad máxima: 80 personas (entre niños y adultos)</li>
         </ul></h4>
         
-      </div>
     </div>
 
     
@@ -223,7 +215,7 @@
     
     <!-- TODO Hacer iconos? -->
     <!-- CONTACTO -->
-    <div class="w3-container w3-content w3-padding-48 w3-large" id="contacto">
+    <div class="w3-container w3-padding-48 w3-large" id="contacto">
         <h1 class="w3-center" style="margin-bottom:32px">CONTACTO</h1>
         <h3><i class="fa fa-phone fa-fw w3-text-purple w3-xxlarge w3-margin-right"></i>Telefono: 314159265</h3>
         <h3><i class="fa fa-envelope fa-fw w3-text-purple w3-xxlarge w3-margin-right"> </i>Email: abrakdabra@gmail.com</h3>
