@@ -1,15 +1,14 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Mali"}
-h1 {font-size:5vw !important}
-h2 {font-size:2.3vw !important}
-h3 {font-size:1.9vw !important}
-h4 {font-size:1.6vw !important}
-h5 {font-size:1.4vw !important}
-h6 {font-size:1.2vw !important}
+h1 {font-size: 5vw !important}
+h2 {font-size: 2.3vw !important}
+h3 {font-size: 1.9vw !important}
+h4 {font-size: 1.6vw !important}
+h5 {font-size: 1.4vw !important}
+h6 {font-size: 1.2vw !important}
 .w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
+/* Set the width of the sidebar to 120px #ffc107*/
 .w3-sidebar {width: 120px;background: #fce883;}
 .menu {display: none}
-h3.one{text-indent: 50px;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
@@ -17,3 +16,53 @@ h3.one{text-indent: 50px;}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){.modal-content {width: 100%;}}
+
+
+#salonBackground {
+  width: 700px;
+  height: 500px;
+  margin: 30px auto;
+  position: relative;
+  background: #9c27b0;
+}
+
+#square0, #square1, #square2, #square3, #square4, #square5{
+width: 150px; 
+height: auto; 
+padding:10px;
+background:#ffc107;
+position:absolute;
+}
+
+#square0{
+top:35px;
+left:35px;
+transform:rotate(10deg);
+-o-transform:rotate(10deg);
+-moz-transform:rotate(10deg);
+-webkit-transform:rotate(10deg);
+}
+#square1{
+bottom:30px;
+right:30px;
+}
+#square2{
+bottom:30px;
+left:50px;
+}
+#square3{
+top:130px;
+left:300px;
+transform:rotate(-10deg);
+-o-transform:rotate(-10deg);
+-moz-transform:rotate(-10deg);
+-webkit-transform:rotate(-10deg);
+}
+#square4{
+top:20px;
+right:50px;
+}
+#square5{
+top:180px;
+left:130px;
+}

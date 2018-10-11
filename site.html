@@ -9,14 +9,16 @@
 <link rel="stylesheet" href="mysite.css">
 
 
-
 <body class="w3-amber">
-  <!-- TODO UBICACION y CONTACTO no estan centrados -->
-  <!-- TODO hacer iconos? -->
+
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- TODO Centrar iconos y texto
+       TODO hacer iconos? -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="width:10%">
+  
     <!-- Avatar image in top left corner -->
     <img class="w3-image" src="graphics/site/topNavbar.svg">
+    
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
       <i class="fa fa-star w3-xxlarge w3-text-deep-orange"></i>
       <h6>INICIO</h6>
@@ -40,24 +42,28 @@
   </nav>
 
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <!-- TODO En celular los botones se deben colocar en fila -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-amber w3-opacity w3-hover-amber w3-hover-opacity-off w3-center w3-small">
+    <div class="w3-bar w3-amber w3-hover-amber w3-hover-opacity-off w3-center w3-small">
       <a href="#salon" class="w3-bar-item w3-button" style="width:25%">SALON</a>
       <a href="#fiestas" class="w3-bar-item w3-button" style="width:25%">FIESTAS</a>
       <a href="#ubicacion" class="w3-bar-item w3-button" style="width:25%">UBICACION</a>
       <a href="#contacto" class="w3-bar-item w3-button" style="width:25%">CONTACTO</a>
     </div>
   </div>
+
   
   <!-- Esta linea hace que el contenido de la pag este al lado de la navbar y no debajo -->
   <div class="w3-padding-large" id="main">
 
 
-    <!-- TODO Fondo y logo -->
     <!-- INICIO -->
+    <!-- TODO Fondo y logo 
+         TODO El header no deberia ir afuera del body? -->
     <header class="w3-display-container w3-center" id="#">
       <img class="w3-image" src="graphics/site/background2.png" alt="background" > 
       <div class="w3-padding w3-display-middle">
+        <div class="cuadrado" style="-webkit-transform:rotate(15deg)"></div>
         <h1 class="w3-center">AbraKdabra</h1>
         <h3>Salon de fiestas infantiles</h3>
       </div>
@@ -65,49 +71,21 @@
 
 
     <!-- SALON Container -->
+    <!-- TODO Probar hacer cuadrados y rellenarlos
+         TODO Modo carrusel cuando estan expandidas
+         TODO Imagenes reales
+         TODO Generalizar, funcion -->
     <div class="w3-container w3-large w3-padding-48" id="salon">
       <h1 class="w3-center">SALON</h1>
-      <div class="w3-third w3-container w3-left l4 m5 s12" style="width:35%">
-        <h4><b>Podes encontrar:</b></h4>
-        <h5><ul style="list-style-type:circle">
-          <li>Globos y piñata.</li>
-          <li>Fiesta disco.</li>
-          <li>Rincón fotográfico.</li>
-          <li>Juegos y plaza blanda.</li>
-          <li>Coordinacion para niños en juegos de competencia y baile.</li>
-          <li>Atención a la mesa de adultos.</li>
-          <li>Aire acondicionado (sector adultos).</li>
-          <li>Descartables para niños y adultos.</li>
-          <li>Wi fi.</li>
-        </ul></h5>
-      </div>
-      <div class="w3-rest w3-container w3-center w3-padding-48 l8 m7 s12"> 
-        <div class="w3-col m6">
-          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/adultos.jpg" onclick="onClick(this)" alt="Sector adultos">
-        </div>
-
-        <div class="w3-col m6">
-          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/cocina.jpg" onclick="onClick(this)" alt="Cocina">
-        </div>
-
-        <div class="w3-col m6">
-          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/cama.jpg" onclick="onClick(this)" alt="Cama elastica">
-        </div>
-
-        <div class="w3-col m6">
-          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/ninos.jpg" onclick="onClick(this)" alt="Sector niños">
-        </div>
-        
-        <div class="w3-col m6">
-          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/castillo.jpg" onclick="onClick(this)" alt="Castillo inflable">
-        </div>
-        
-        <div class="w3-col m6">
-          <img class="w3-image w3-hover-opacity" style="width:70%;cursor:pointer" src="graphics/salon/trepador.jpg" onclick="onClick(this)" alt="Trepador">
-        </div>
-      </div>
+      <div class="w3-image w3-container" id="salonBackground">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square0" src="uno.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square1" src="dos.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square2" src="tres.jpg">
+      <img class="w3-image w3-hover-opacity" style="width:30%;height:auto;cursor:pointer" onclick="onClick(this)" id="square3" src="cuatro.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square4" src="cinco.jpg">
+      <img class="w3-image w3-hover-opacity" style="width:25%;height:auto;cursor:pointer" onclick="onClick(this)" id="square5" src="seis.jpg">
     </div>
-
+    
     <!-- Modal for full size images on click-->
     <div class="w3-modal w3-amber w3-center" onclick="this.style.display='none'" id="modal01">
       <span class="w3-button w3-large w3-hover-amber w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -118,8 +96,9 @@
     </div>   
 
     
-    <!-- TODO Color de los botones -->
     <!-- FIESTAS Container -->
+    <!-- TODO Color de los botones
+         TODO Agregar texto explicativo -->
     <div class="w3-container w3-padding-48 w3-large" id="fiestas">
       
         <h1 class="w3-center">FIESTAS</h1>
@@ -204,17 +183,17 @@
     </div>
 
     
-    <!-- TODO Colocar bien el mapa -->
     <!-- UBICACION (with google maps) -->
+    <!-- TODO Api de GoogleMaps y Barrio-->
     <div class="w3-container w3-padding-48 w3-large" id="ubicacion">
       <h1 class="w3-center">UBICACION</h1>
-      <h3 class="w3-center">Nombre de calle numero, barrio, ciudad, provincia, pais.</h3>
+      <h3 class="w3-center">América Central 2179, barrio, Córdoba Capital, Córdoba, Argentina.</h3>
       <div class="w3-grayscale-max" style="width:100%;height:400px" id="googleMap"></div>
     </div>
 
     
-    <!-- TODO Hacer iconos? -->
     <!-- CONTACTO -->
+    <!-- TODO Hacer iconos? -->
     <div class="w3-container w3-padding-48 w3-large" id="contacto">
         <h1 class="w3-center" style="margin-bottom:32px">CONTACTO</h1>
         <h3><i class="fa fa-phone fa-fw w3-text-purple w3-xxlarge w3-margin-right"></i>Telefono: 314159265</h3>
@@ -242,7 +221,7 @@
     // GoogleMaps
     function myMap()
     {
-      myCenter=new google.maps.LatLng(41.878114, -87.629798);
+      myCenter=new google.maps.LatLng(-31.4763368, -64.2428434);
       var mapOptions= {
         center:myCenter,
         zoom:12, scrollwheel: false, draggable: false,
@@ -255,7 +234,7 @@
       });
       marker.setMap(map);
     }
-    
+
     // Modal Image Gallery
     function onClick(element) {
       document.getElementById("img01").src = element.src;
