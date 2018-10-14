@@ -14,28 +14,28 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <!-- TODO Centrar iconos y texto
        TODO hacer iconos? -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="width:10%">
+  <nav class="w3-sidebar w3-hide-small w3-center" style="width:11%">
   
     <!-- Avatar image in top left corner -->
     <img class="w3-image" src="graphics/site/topNavbar.svg">
     
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+    <a href="#" class="w3-button w3-padding-large w3-bar-item w3-hover-purple">
       <i class="fa fa-star w3-xxlarge w3-text-deep-orange"></i>
       <h6>INICIO</h6>
     </a>
-    <a href="#salon" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+    <a href="#salon" class="w3-button w3-padding-large w3-bar-item w3-hover-purple">
       <i class="fa fa-home w3-xxlarge w3-text-blue"></i>
       <h6>SALON</h6>
     </a>
-    <a href="#fiestas" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+    <a href="#fiestas" class="w3-button w3-padding-large w3-bar-item w3-hover-purple">
       <i class="fa fa-birthday-cake w3-xxlarge w3-text-red"></i>
       <h6>FIESTAS</h6>
     </a>
-    <a href="#ubicacion" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+    <a href="#ubicacion" class="w3-button w3-padding-large w3-bar-item w3-hover-purple">
       <i class="fa fa-map  w3-xxlarge w3-text-light-green"></i>
       <h6>UBICACION</h6>
     </a>
-      <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+      <a href="#contacto" class="w3-button w3-padding-large w3-bar-item w3-hover-purple">
       <i class="fa fa-user w3-xxlarge w3-text-pink"></i>
       <h6>CONTACTO</h6>
     </a>
@@ -44,30 +44,26 @@
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <!-- TODO En celular los botones se deben colocar en fila -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-amber w3-hover-amber w3-hover-opacity-off w3-center w3-small">
-      <a href="#salon" class="w3-bar-item w3-button" style="width:25%">SALON</a>
-      <a href="#fiestas" class="w3-bar-item w3-button" style="width:25%">FIESTAS</a>
-      <a href="#ubicacion" class="w3-bar-item w3-button" style="width:25%">UBICACION</a>
-      <a href="#contacto" class="w3-bar-item w3-button" style="width:25%">CONTACTO</a>
+    <div class="w3-bar w3-amber w3-center w3-small">
+      <a href="#salon" class="w3-button w3-bar-item w3-hover-purple" style="width:25%">SALON</a>
+      <a href="#fiestas" class="w3-button w3-bar-item w3-hover-purple" style="width:25%">FIESTAS</a>
+      <a href="#ubicacion" class="w3-button w3-bar-item w3-hover-purple" style="width:25%">UBICACION</a>
+      <a href="#contacto" class="w3-button w3-bar-item w3-hover-purple" style="width:25%">CONTACTO</a>
     </div>
   </div>
 
   
-  <!-- Esta linea hace que el contenido de la pag este al lado de la navbar y no debajo -->
+<!-- Add a left margin to the "page content" that matches the width of the sidebar -->
+<!-- "main" in css -->
   <div class="w3-padding-large" id="main">
 
 
     <!-- INICIO -->
     <!-- TODO Fondo y logo 
          TODO El header no deberia ir afuera del body? -->
-    <header class="w3-display-container w3-center" id="#">
-      <img class="w3-image" src="graphics/site/background2.png" alt="background" > 
-      <div class="w3-padding w3-display-middle">
-        <div class="cuadrado" style="-webkit-transform:rotate(15deg)"></div>
-        <h1 class="w3-center">AbraKdabra</h1>
-        <h3>Salon de fiestas infantiles</h3>
-      </div>
-    </header>
+    <div class="w3-display-container w3-large w3-padding-48 w3-center" id="#">
+      <img class="w3-image" src="graphics/site/background2.png" alt="logo" > 
+    </divr>
 
 
     <!-- SALON Container -->
@@ -77,21 +73,24 @@
          TODO Generalizar, funcion -->
     <div class="w3-container w3-large w3-padding-48" id="salon">
       <h1 class="w3-center">SALON</h1>
-      <div class="w3-image w3-container" id="salonBackground">
-      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square0" src="uno.jpg">
-      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square1" src="dos.jpg">
-      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square2" src="tres.jpg">
-      <img class="w3-image w3-hover-opacity" style="width:30%;height:auto;cursor:pointer" onclick="onClick(this)" id="square3" src="cuatro.jpg">
-      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square4" src="cinco.jpg">
-      <img class="w3-image w3-hover-opacity" style="width:25%;height:auto;cursor:pointer" onclick="onClick(this)" id="square5" src="seis.jpg">
+      <div class="w3-image" src="salonBack.png">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square0" src="graphics/salon/adultos.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square1" src="graphics/salon/cama.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square2" src="graphics/salon/castillo.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square3" src="graphics/salon/cocina.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square4" src="graphics/salon/ninos.jpg">
+      <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square5" src="graphics/salon/trepador.jpg">
     </div>
+
+    
+    
     
     <!-- Modal for full size images on click-->
-    <div class="w3-modal w3-amber w3-center" onclick="this.style.display='none'" id="modal01">
-      <span class="w3-button w3-large w3-hover-amber w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal w3-center w3-amber" onclick="this.style.display='none'" id="modal01">
+      <span class="w3-button w3-large w3-display-topright w3-hover-amber" title="Close Modal Image"><i class="fa fa-remove"></i></span>
       <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
         <img class="w3-image" style="width:100%" id="img01">
-        <p class="w3-opacity w3-large" id="caption"></p>
+        <p class="w3-large w3-opacity" id="caption"></p>
       </div>
     </div>   
 
@@ -99,7 +98,7 @@
     <!-- FIESTAS Container -->
     <!-- TODO Color de los botones
          TODO Agregar texto explicativo -->
-    <div class="w3-container w3-padding-48 w3-large" id="fiestas">
+    <div class="w3-container w3-large w3-padding-48 w3-left-align" id="fiestas">
       
         <h1 class="w3-center">FIESTAS</h1>
         <h4><b>Todas las fiestas incluyen:</b></h4>
@@ -113,64 +112,64 @@
       
         <div class="w3-row w3-center w3-amber">
           <a href="javascript:void(0)" onclick="openMenu(event, 'op1');" id="myLink">
-            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Opcion 1</div>
+            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Opcion 1</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'op2');">
-            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Opcion 2</div>
+            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Opcion 2</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'extra');">
-            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Extras</div>
+            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Extras</div>
           </a>
           <a href="javascript:void(0)" onclick="openMenu(event, 'hs');">
-            <div class="w3-quarter s4 tablink w3-padding w3-hover-purple" style="font-size:2vw">Horarios</div>
+            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Horarios</div>
           </a>
         </div>
 
-        <div class="w3-container menu w3-padding w3-yellow" id="op1">
+        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="op1">
           <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
           <h3>Lunes a Viernes:</h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">$1250</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">$2750</span></h3>
-          <h3>Sábados,  Domingo y feriados<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
-          <h3>Por cada niño extra<span class="w3-right w3-tag w3-purple w3-round">$6</span></h3>
-          <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">$1250</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">$2750</span></h3>
+          <h3>Sábados,  Domingo y feriados<span class="w3-tag w3-round w3-right w3-purple">$3050</span></h3>
+          <h3>Por cada niño extra<span class="w3-tag w3-round w3-right w3-purple">$6</span></h3>
+          <h3>Por cada adulto extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
         </div>
 
-        <div class="w3-container menu w3-padding w3-yellow" id="op2">
+        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="op2">
           <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
           <h3><b>Snack*, panchos y gaseosas** libres para NIÑOS.</b></h3>
           <h3>Lunes a Viernes:</h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">$2300</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">$3050</span></h3>
-          <h3>Sábados,  Domingo y feriados<span class="w3-right w3-tag w3-purple w3-round">$3550</span></h3>
-          <h3>Por cada niño extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
-          <h3>Por cada adulto extra<span class="w3-right w3-tag w3-purple w3-round">$10</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">$2300</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">$3050</span></h3>
+          <h3>Sábados,  Domingo y feriados<span class="w3-tag w3-round w3-right w3-purple">$3550</span></h3>
+          <h3>Por cada niño extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
+          <h3>Por cada adulto extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
           <h5 class="w3-text-dark-grey">*Chizitos, palitos, papitas, nachos, pururu, tutucas, dulcitas, puflitos, pizzetitas.<br>**Linea coca cola o pepsi.</h5>
         </div>
 
-        <div class="w3-container menu w3-padding w3-yellow" id="extra">
-          <h3><b>Maquillaje artistico</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
-          <h3><b>Globologia</b> <span class="w3-right w3-tag w3-purple w3-round">$200</span></h3>
-          <h3><b>Torta</b> <span class="w3-right w3-tag w3-purple w3-round">$450</span></h3>
-          <h3><b>Fiesta teen</b> <span class="w3-right w3-tag w3-purple w3-round">$750</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Incluye tragos sin alcohol y mucho más!</h3>
-          <h3><b>Mas de 60 personas</b> <span class="w3-right w3-tag w3-purple w3-round">$300</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Incluye un coordinador extra!</h3>
+        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="extra">
+          <h3><b>Maquillaje artistico</b> <span class="w3-tag w3-round w3-right w3-purple">$200</span></h3>
+          <h3><b>Globologia</b> <span class="w3-tag w3-round w3-right w3-purple">$200</span></h3>
+          <h3><b>Torta</b> <span class="w3-tag w3-round w3-right w3-purple">$450</span></h3>
+          <h3><b>Fiesta teen</b> <span class="w3-tag w3-round w3-right w3-purple">$750</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Incluye tragos sin alcohol y mucho más!</h3>
+          <h3><b>Mas de 60 personas</b> <span class="w3-tag w3-round w3-right w3-purple">$300</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Incluye un coordinador extra!</h3>
         </div>
         
-        <div class="w3-container menu w3-padding w3-yellow" id="hs">
+        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="hs">
           <h3><b>Lunes a Viernes:</b></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">14:45 a 17:45h</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">18:30 a 21:30h</span></h3>
           <h3><b>Sábados, Domingos y feriados:</b></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Mañana (Con 10% de Descuento)<span class="w3-right w3-tag w3-purple w3-round">11 a 14h</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Tarde<span class="w3-right w3-tag w3-purple w3-round">14:45 a 17:45h</span></h3>
-          <h3><i class="fa fa-arrow-right w3-text-purple w3-large"></i>Noche<span class="w3-right w3-tag w3-purple w3-round">18:30 a 21:30h</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Mañana (Con 10% de Descuento)<span class="w3-tag w3-round w3-right w3-purple">11 a 14h</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">14:45 a 17:45h</span></h3>
+          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">18:30 a 21:30h</span></h3>
         </div>
 
         <br>
 
-        <h2><b><span class="w3-tag w3-padding w3-round-large w3-purple w3-center">Advertencias y pagos</span></b></h2>
+        <h2><b><span class="w3-tag w3-round-large w3-padding w3-purple">Advertencias y pagos</span></b></h2>
         <h4><ul style="list-style-type:circle">
           <li>Se debe abonar una seña de $400 (sin devolución).</li>
           <li>Si abona con tarjeta de crédito hay un recargo del 20% y el pago debe realizarse con 48h de anticipación.</li>
@@ -185,33 +184,33 @@
     
     <!-- UBICACION (with google maps) -->
     <!-- TODO Api de GoogleMaps y Barrio-->
-    <div class="w3-container w3-padding-48 w3-large" id="ubicacion">
-      <h1 class="w3-center">UBICACION</h1>
-      <h3 class="w3-center">América Central 2179, barrio, Córdoba Capital, Córdoba, Argentina.</h3>
-      <div class="w3-grayscale-max" style="width:100%;height:400px" id="googleMap"></div>
+    <div class="w3-container w3-large w3-padding-48 w3-center" id="ubicacion">
+      <h1>UBICACION</h1>
+      <h3>América Central 2179, barrio, Córdoba Capital, Córdoba, Argentina.</h3>
+      <div class="w3-round-large w3-grayscale-max" style="width:100%;height:400px" id="googleMap"></div>
     </div>
 
     
     <!-- CONTACTO -->
     <!-- TODO Hacer iconos? -->
-    <div class="w3-container w3-padding-48 w3-large" id="contacto">
+    <div class="w3-container w3-large w3-padding-48 w3-left-align" id="contacto">
         <h1 class="w3-center" style="margin-bottom:32px">CONTACTO</h1>
-        <h3><i class="fa fa-phone fa-fw w3-text-purple w3-xxlarge w3-margin-right"></i>Telefono: 314159265</h3>
-        <h3><i class="fa fa-envelope fa-fw w3-text-purple w3-xxlarge w3-margin-right"> </i>Email: abrakdabra@gmail.com</h3>
+        <h3><i class="fa fa-phone w3-xxlarge w3-margin-right w3-text-purple"></i>Telefono: 314159265</h3>
+        <h3><i class="fa fa-envelope w3-xxlarge w3-margin-right w3-text-purple"> </i>Email: abrakdabra@gmail.com</h3>
         <br>
         <h2>Podes dejarnos un mensaje y nosotros te contactamos:</h2>
         <form action="/action_page.php" target="_blank">
-          <h3><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Nombre"></h3>
-          <h3><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></h3>
-          <h3><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Consultas" required name="Consultas"></h3>
-          <h3><button class="w3-button w3-light-grey" type="submit">Enviar mensaje</button></h3>
+          <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></h3>
+          <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Email" required name="Email"></h3>
+          <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Consultas" required name="Consultas"></h3>
+          <h3><button class="w3-button w3-round-large w3-purple w3-hover-amber" type="submit">Enviar mensaje</button></h3>
         </form>
     </div>
 
     
     <!-- Footer -->
-    <footer class="w3-center w3-hover-purple w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#" class="w3-button w3-purple w3-hover-amber"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
+    <footer class="w3-round w3-padding-64 w3-center w3-hover-purple w3-opacity w3-hover-opacity-off">
+      <a href="#" class="w3-button w3-round-large w3-purple w3-hover-amber"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
       <h3>Powered by <a href="https://github.com/KaySoohyun" title="KaySoohyun" target="_blank" class="w3-hover-text-amber">KaySoohyun</a></h3>
     </footer>
 
