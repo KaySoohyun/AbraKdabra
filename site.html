@@ -15,32 +15,37 @@
     <!-- TODO hacer iconos? 
         TODO centrar iconos y nombres -->
     
-    <nav class="w3-sidebar w3-bar-block w3-center w3-top w3-animate-left w3-collapse w3-text-purple" style="z-index:3;width:11%" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-center w3-top w3-animate-left w3-collapse w3-text-amber" style="z-index:3;width:11%" id="mySidebar">
       <img class="w3-image" src="graphics/site/topNavbar.svg">
       
       <a href="#" onclick="w3_close()" class="w3-button w3-center w3-bar-item w3-hover-purple w3-mobile">
-        <i class="fa fa-star w3-xxlarge w3-text-deep-orange"></i>
-        <h6><b>INICIO</b></h6>
+        <i class="fa fa-star w3-xxlarge w3-text-amber w3-hover-purple">
+          <h6><b>INICIO</b></h6>
+        </i>
       </a> 
       
       <a href="#salon" onclick="w3_close()" class="w3-button w3-center w3-bar-item w3-hover-purple w3-mobile">
-        <i class="fa fa-home w3-xxlarge w3-text-blue"></i>
-        <h6><b>SALON</b></h6>  
+        <i class="fa fa-home w3-xxlarge w3-text-amber w3-hover-purple">
+          <h6><b>SALON</b></h6>  
+        </i>
       </a> 
       
       <a href="#fiestas" onclick="w3_close()" class="w3-button w3-center w3-bar-item w3-hover-purple w3-mobile">
-        <i class="fa fa-birthday-cake w3-xxlarge w3-text-red"></i>
-        <h6><b>FIESTAS</b></h6>  
+        <i class="fa fa-birthday-cake w3-xxlarge w3-text-amber w3-hover-purple">
+          <h6><b>FIESTAS</b></h6>  
+        </i>
       </a>
       
       <a href="#ubicacion" onclick="w3_close()" class="w3-button w3-center w3-bar-item w3-hover-purple w3-mobile">
-        <i class="fa fa-map w3-xxlarge w3-center w3-text-light-green"></i>
-        <h6 style="text-align:center"><b>UBICACION</b></h6>  
+        <i class="fa fa-map w3-xxlarge w3-center w3-text-amber w3-hover-purple">
+          <h6 style="text-align:center"><b>UBICACION</b></h6>  
+        </i>
       </a>
       
       <a href="#contacto" onclick="w3_close()" class="w3-button w3-center w3-bar-item w3-hover-purple w3-mobile">
-        <i class="fa fa-user w3-xxlarge w3-text-pink"></i>
-        <h6><b>CONTACTO</b></h6>  
+        <i class="fa fa-user w3-xxlarge w3-text-amber w3-hover-purple">
+          <h6><b>CONTACTO</b></h6>
+        </i>
       </a>
     </nav>
 
@@ -65,8 +70,8 @@
 
     <!-- INICIO -->
     <!-- TODO Fondo y logo -->
-    <div class="w3-display-container w3-large w3-padding-48 w3-center" id="#">
-      <img class="w3-image" src="graphics/site/background2.png" alt="logo" > 
+    <div class="w3-display-container w3-large w3-padding-16 w3-center" id="#">
+      <img class="w3-image" src="graphics/site/background2.png" alt="logo"> 
     </divr>
 
 
@@ -76,7 +81,7 @@
          TODO Generalizar, funcion -->
     <div class="w3-container w3-large w3-padding-48" id="salon">
       <h1 class="w3-center">SALON</h1>
-      <div class="w3-image" src="graphics/site/salonBackground.svg">
+      <div class="w3-container" id="salonBackground">
       <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square0" src="graphics/salon/adultos.jpg">
       <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square1" src="graphics/salon/cama.jpg">
       <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square2" src="graphics/salon/castillo.jpg">
@@ -101,84 +106,84 @@
          TODO Agregar texto explicativo -->
     <div class="w3-container w3-large w3-padding-48 w3-left-align" id="fiestas">
       
-        <h1 class="w3-center">FIESTAS</h1>
-        <h4><b>Todas las fiestas incluyen:</b></h4>
-        <h4><ul style="list-style-type:circle">
-          <li>Capacidad para 25 niños y 20 adultos (se cobrará por cada persona extra).</li>
-          <li>Duración de 3 horas.</li>
-          <li>25 tarjetas de invitaciones.</li>
-          <li>3 coordinadores (1 para adultos, 2 para niños).</li>
-          <li>Set de merienda (traer yerba y azucar).</li>
-        </ul></h4>
+      <h1 class="w3-center">FIESTAS</h1>
+      <h4><b>Todas las fiestas incluyen:</b></h4>
+      <h4><ul style="list-style-type:circle">
+        <li>Capacidad para 25 niños y 20 adultos (se cobrará por cada persona extra).</li>
+        <li>Duración de 3 horas.</li>
+        <li>25 tarjetas de invitaciones.</li>
+        <li>3 coordinadores (1 para adultos, 2 para niños).</li>
+        <li>Set de merienda (traer yerba y azucar).</li>
+      </ul></h4>
+    
+      <div class="w3-row w3-center w3-amber">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'op1');" id="myLink">
+          <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Opcion 1</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'op2');">
+          <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Opcion 2</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'extra');">
+          <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Extras</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'hs');">
+          <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Horarios</div>
+        </a>
+      </div>
+
+      <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="op1">
+        <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
+        <h3>Lunes a Viernes:</h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">$1250</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">$2750</span></h3>
+        <h3>Sábados,  Domingo y feriados<span class="w3-tag w3-round w3-right w3-purple">$3050</span></h3>
+        <h3>Por cada niño extra<span class="w3-tag w3-round w3-right w3-purple">$6</span></h3>
+        <h3>Por cada adulto extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
+      </div>
+
+      <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="op2">
+        <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
+        <h3><b>Snack*, panchos y gaseosas** libres para NIÑOS.</b></h3>
+        <h3>Lunes a Viernes:</h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">$2300</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">$3050</span></h3>
+        <h3>Sábados,  Domingo y feriados<span class="w3-tag w3-round w3-right w3-purple">$3550</span></h3>
+        <h3>Por cada niño extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
+        <h3>Por cada adulto extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
+        <h5 class="w3-text-dark-grey">*Chizitos, palitos, papitas, nachos, pururu, tutucas, dulcitas, puflitos, pizzetitas.<br>**Linea coca cola o pepsi.</h5>
+      </div>
+
+      <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="extra">
+        <h3><b>Maquillaje artistico</b> <span class="w3-tag w3-round w3-right w3-purple">$200</span></h3>
+        <h3><b>Globologia</b> <span class="w3-tag w3-round w3-right w3-purple">$200</span></h3>
+        <h3><b>Torta</b> <span class="w3-tag w3-round w3-right w3-purple">$450</span></h3>
+        <h3><b>Fiesta teen</b> <span class="w3-tag w3-round w3-right w3-purple">$750</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Incluye tragos sin alcohol y mucho más!</h3>
+        <h3><b>Mas de 60 personas</b> <span class="w3-tag w3-round w3-right w3-purple">$300</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Incluye un coordinador extra!</h3>
+      </div>
       
-        <div class="w3-row w3-center w3-amber">
-          <a href="javascript:void(0)" onclick="openMenu(event, 'op1');" id="myLink">
-            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Opcion 1</div>
-          </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'op2');">
-            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Opcion 2</div>
-          </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'extra');">
-            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Extras</div>
-          </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'hs');">
-            <div class="w3-quarter s4 tablink w3-round-small w3-padding w3-hover-purple" style="font-size:2vw">Horarios</div>
-          </a>
-        </div>
+      <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="hs">
+        <h3><b>Lunes a Viernes:</b></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">14:45 a 17:45h</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">18:30 a 21:30h</span></h3>
+        <h3><b>Sábados, Domingos y feriados:</b></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Mañana (Con 10% de Descuento)<span class="w3-tag w3-round w3-right w3-purple">11 a 14h</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">14:45 a 17:45h</span></h3>
+        <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">18:30 a 21:30h</span></h3>
+      </div>
 
-        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="op1">
-          <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
-          <h3>Lunes a Viernes:</h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">$1250</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">$2750</span></h3>
-          <h3>Sábados,  Domingo y feriados<span class="w3-tag w3-round w3-right w3-purple">$3050</span></h3>
-          <h3>Por cada niño extra<span class="w3-tag w3-round w3-right w3-purple">$6</span></h3>
-          <h3>Por cada adulto extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
-        </div>
+      <br>
 
-        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="op2">
-          <h3><b>Uso completo del salón y todas las actividades del mismo.</b></h3>
-          <h3><b>Snack*, panchos y gaseosas** libres para NIÑOS.</b></h3>
-          <h3>Lunes a Viernes:</h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">$2300</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">$3050</span></h3>
-          <h3>Sábados,  Domingo y feriados<span class="w3-tag w3-round w3-right w3-purple">$3550</span></h3>
-          <h3>Por cada niño extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
-          <h3>Por cada adulto extra<span class="w3-tag w3-round w3-right w3-purple">$10</span></h3>
-          <h5 class="w3-text-dark-grey">*Chizitos, palitos, papitas, nachos, pururu, tutucas, dulcitas, puflitos, pizzetitas.<br>**Linea coca cola o pepsi.</h5>
-        </div>
-
-        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="extra">
-          <h3><b>Maquillaje artistico</b> <span class="w3-tag w3-round w3-right w3-purple">$200</span></h3>
-          <h3><b>Globologia</b> <span class="w3-tag w3-round w3-right w3-purple">$200</span></h3>
-          <h3><b>Torta</b> <span class="w3-tag w3-round w3-right w3-purple">$450</span></h3>
-          <h3><b>Fiesta teen</b> <span class="w3-tag w3-round w3-right w3-purple">$750</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Incluye tragos sin alcohol y mucho más!</h3>
-          <h3><b>Mas de 60 personas</b> <span class="w3-tag w3-round w3-right w3-purple">$300</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Incluye un coordinador extra!</h3>
-        </div>
-        
-        <div class="w3-container menu w3-round-small w3-padding w3-yellow" id="hs">
-          <h3><b>Lunes a Viernes:</b></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">14:45 a 17:45h</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">18:30 a 21:30h</span></h3>
-          <h3><b>Sábados, Domingos y feriados:</b></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Mañana (Con 10% de Descuento)<span class="w3-tag w3-round w3-right w3-purple">11 a 14h</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Tarde<span class="w3-tag w3-round w3-right w3-purple">14:45 a 17:45h</span></h3>
-          <h3><i class="fa w3-large fa-arrow-right w3-text-purple"></i>Noche<span class="w3-tag w3-round w3-right w3-purple">18:30 a 21:30h</span></h3>
-        </div>
-
-        <br>
-
-        <h2><b><span class="w3-tag w3-round-large w3-padding w3-purple">Advertencias y pagos</span></b></h2>
-        <h4><ul style="list-style-type:circle">
-          <li>Se debe abonar una seña de $400 (sin devolución).</li>
-          <li>Si abona con tarjeta de crédito hay un recargo del 20% y el pago debe realizarse con 48h de anticipación.</li>
-          <li>Se ingresa al salón 15 min antes.</li>
-          <li>Hay 15 min de tolerancia a la salida, caso contrario deberá abonar $300 extras.</li>
-          <li>Están prohibidas las bebidas alcohólicas y fumar dentro del salon.</li>
-          <li>Capacidad máxima: 80 personas (entre niños y adultos)</li>
-        </ul></h4>
+      <h2><b><span class="w3-tag w3-round-large w3-padding w3-purple">Advertencias y pagos</span></b></h2>
+      <h4><ul style="list-style-type:circle">
+        <li>Se debe abonar una seña de $400 (sin devolución).</li>
+        <li>Si abona con tarjeta de crédito hay un recargo del 20% y el pago debe realizarse con 48h de anticipación.</li>
+        <li>Se ingresa al salón 15 min antes.</li>
+        <li>Hay 15 min de tolerancia a la salida, caso contrario deberá abonar $300 extras.</li>
+        <li>Están prohibidas las bebidas alcohólicas y fumar dentro del salon.</li>
+        <li>Capacidad máxima: 80 personas (entre niños y adultos)</li>
+      </ul></h4>
         
     </div>
 
