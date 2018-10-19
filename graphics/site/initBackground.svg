@@ -15,7 +15,7 @@
    version="1.1"
    id="svg13873"
    inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="background.svg"
+   sodipodi:docname="initBackground.svg"
    inkscape:export-filename="/home/kona/mySite/AbraKdabra/graphics/site/background2.png"
    inkscape:export-xdpi="70.400002"
    inkscape:export-ydpi="70.400002">
@@ -126,14 +126,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748738"
-     inkscape:cx="1134.1371"
+     inkscape:cx="566.43139"
      inkscape:cy="820.0574"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1362"
+     inkscape:window-width="679"
      inkscape:window-height="724"
-     inkscape:window-x="0"
+     inkscape:window-x="683"
      inkscape:window-y="20"
      inkscape:window-maximized="0"
      inkscape:showpageshadow="false"
@@ -159,7 +159,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2713,7 +2713,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.28729414,0,0,0.28729414,124.45637,104.87665)"
+       transform="matrix(0.28729414,0,0,0.28729414,124.45637,86.355778)"
        id="g3168"
        style="stroke:#440055;stroke-width:5.07294035;stroke-miterlimit:4;stroke-dasharray:none">
       <path
