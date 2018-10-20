@@ -45,9 +45,9 @@
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-hide-large w3-large w3-padding-small w3-top w3-purple" id="myNavbar">
-      <span class="w3-padding w3-left w3-text-amber"><b>ABRAKDABRA</b></span>
+      <a href="#"><span class="w3-padding w3-left w3-text-amber"><b>ABRAKDABRA</b></span></a>
       <a href="javascript:void(0)" class="w3-button w3-padding w3-right w3-hover-purple" onclick="w3_open()">
-        <i class="fa fa-bars w3-text-amber"></i>  <!--fa-chevron-down-->
+        <i class="fa fa-bars w3-text-amber w3-hover-purple"></i>  <!--fa-chevron-down-->
       </a>
     </header>
 
@@ -71,7 +71,8 @@
     <!-- TODO Modo carrusel cuando estan expandidas
          TODO Generalizar, funcion -->
     <div class="w3-container w3-large w3-padding-48" id="salon">
-      <h1 class="w3-center">SALON</h1>
+      <img class="w3-image w3-center" style="height:10vw" src="graphics/site/salonTitle.svg">
+<!--      <h1 class="w3-center">SALON</h1>-->
       <div class="w3-container" id="salonBackground">
       <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square0" src="graphics/salon/adultos.jpg">
       <img class="w3-image w3-hover-opacity" style="cursor:pointer" onclick="onClick(this)" id="square1" src="graphics/salon/cama.jpg">
@@ -95,7 +96,7 @@
     <!-- FIESTAS Container -->
     <div class="w3-container w3-large w3-padding-48 w3-left-align" id="fiestas">
       
-      <h1 class="w3-center">FIESTAS</h1>
+      <img class="w3-image w3-center" style="height:10vw;margin-bottom:32px" src="graphics/site/fiestasTitle.svg">
       <h4><b>Todas las fiestas incluyen:</b></h4>
       <h4>
         <i class="fa fa-circle-o w3-padding-small w3-text-purple"></i> Capacidad para 25 niños y 20 adultos (se cobrará por cada persona extra).<br>
@@ -191,7 +192,7 @@
     <!-- TODO ICONO!
               Colores? -->
     <div class="w3-container w3-large w3-padding-48 w3-center" id="ubicacion">
-      <h1>UBICACION</h1>
+      <img class="w3-image w3-center" style="height:10vw" src="graphics/site/ubicacionTitle.svg">
       <h3>América Central 2179, Santa Isabel III sección, Córdoba Capital, Argentina.</h3>
       <div class="w3-round-large" style="z-index:0;width:100%;height:400px" id="map"></div>
     </div>
@@ -200,27 +201,28 @@
     <!-- CONTACTO Container-->
     <!-- TODO Hacer iconos? -->
     <div class="w3-container w3-large w3-padding-48 w3-left-align" id="contacto">
-        <h1 class="w3-center" style="margin-bottom:32px">CONTACTO</h1>
-        <h3>
-          <i class="fa fa-phone w3-margin-right w3-text-purple"></i>
-          <i class="fa fa-whatsapp w3-margin-right w3-text-purple"></i>+54 9 351 309-8605
-        </h3>
-        <h3>
-          <a href="https://facebook.com/toti.wiesztort" title="Facebook">
-            <i class="fa fa-facebook-square w3-margin-right w3-text-purple"></i>Toti Wiesztort
-          </a>
-        </h3>
-        <h3>
-          <i class="fa fa-envelope w3-margin-right w3-text-purple"></i>abrakdabra@gmail.com
-        </h3>
-        <br>
-        <h2>Podes dejarnos un mensaje y nosotros te contactamos:</h2>
-        <form action="/action_page.php" target="_blank">
-          <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></h3>
-          <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Email" required name="Email"></h3>
-          <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Consultas" required name="Consultas"></h3>
-          <h3><button class="w3-button w3-round-large w3-purple w3-hover-amber" type="submit">Enviar mensaje</button></h3>
-        </form>
+      <img class="w3-image w3-center" style="height:10vw" src="graphics/site/contactoTitle.svg">
+      <!--<h1 class="w3-center" style="margin-bottom:32px">CONTACTO</h1>-->
+      <h3>
+        <i class="fa fa-phone w3-margin-right w3-text-purple"></i>
+        <i class="fa fa-whatsapp w3-margin-right w3-text-purple"></i>+54 9 351 309-8605
+      </h3>
+      <h3>
+        <a href="https://facebook.com/toti.wiesztort" title="Facebook">
+          <i class="fa fa-facebook-square w3-margin-right w3-text-purple"></i>Toti Wiesztort
+        </a>
+      </h3>
+      <h3>
+        <i class="fa fa-envelope w3-margin-right w3-text-purple"></i>abrakdabra@gmail.com
+      </h3>
+      <br>
+      <h2>Podes dejarnos un mensaje y nosotros te contactamos:</h2>
+      <form action="/action_page.php" target="_blank">
+        <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></h3>
+        <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Email" required name="Email"></h3>
+        <h3><input class="w3-input w3-round w3-padding-16" type="text" placeholder="Consultas" required name="Consultas"></h3>
+        <h3><button class="w3-button w3-round-large w3-purple w3-hover-amber" type="submit">Enviar mensaje</button></h3>
+      </form>
     </div>
 
     
