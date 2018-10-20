@@ -27,7 +27,7 @@ width: 100%;
 height: 35vw;
 margin: 30px auto;
 position: relative;
-background: url(graphics/site/salonBackground.svg);
+background: url(graphics/site/salonBackground.svg) no-repeat center;
 }
 
 #square0, #square1, #square2, #square3, #square4, #square5{
