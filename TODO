@@ -1,0 +1,20 @@
+TODO List
+
+- Imagen para modal con boton Entrar
+- Letra responsive
+- Centrar titulos
+- Centrar iconos en sidebar
+- Imagen para fondo
+- Bootstrap y w3
+- Imagen de fondo para Salon
+- Agregar fotos en salon y acomodarlas bien
+- Hacer algo con la descripcion de las fotos
+
+.gradienteBackground {
+height: 100px;
+background-color: purple;
+background-image: linear-gradient(-90deg, purple, yellow);
+}
+
+
+<strong>bold text</strong>
