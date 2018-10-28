@@ -4,11 +4,11 @@ TODO List
 - Bootstrap y w3
 - Imagen de fondo para Salon
 
+position: static | relative | absolute | fixed | inherit | initial
 
 
 SITE
 Imagenes cargan lento
-Banner padding top
 
 imagen de fondo en salon
 imagenes mas grandes en salon
