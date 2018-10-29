@@ -9,7 +9,7 @@ h2 {font-size: 2.3vw !important}
 h3 {font-size: 1.9vw !important}
 h4 {font-size: 1.6vw !important}
 h5 {font-size: 1.9vw !important}
-h6 {font-size: 1.4vw !important}
+h6 {font-size: 1.5vw !important}
 
 .w3-row-padding img {margin-bottom: 12px}
 
@@ -25,12 +25,12 @@ h6 {font-size: 1.4vw !important}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 992px) {
   #main {margin-left: 0}
-  h1 {font-size: 5vw !important}
-  h2 {font-size: 4vw !important}
-  h3 {font-size: 3.2vw !important}
-  h4 {font-size: 2.7vw !important}
-  h5 {font-size: 3vw !important}
-  h6 {font-size: 3.3vw !important}
+  h1 {font-size: 5.2vw !important}
+  h2 {font-size: 4.2vw !important}
+  h3 {font-size: 3.4vw !important}
+  h4 {font-size: 2.9vw !important}
+  h5 {font-size: 3.2vw !important}
+  h6 {font-size: 3.5vw !important}
   .w3-sidebar {width: 30% !important}
   .iconTop {width: 20vw !important; padding-bottom:5vw;}
   .iconBar {width: 15vw !important}
@@ -40,8 +40,8 @@ h6 {font-size: 1.4vw !important}
 /* 100% Image Width on Smaller Screens */
 /*@media only screen and (max-width: 700px){.modal-content {width: 100%}}*/
 
-.iconTop {width: 20vw; padding-bottom:2vw;}
-.iconBar {width: 5vw}
+.iconTop {width: 20vw; padding-bottom:1vw;}
+.iconBar {width: 4vw}
 
 body {
   background-image: url("graphics/site/backgroundBody.svg");
@@ -49,7 +49,7 @@ body {
 }
 
 .imgTitle{
-  height:15vw !important;
+  margin-top:16px !important;
   margin-bottom:16px !important;
 }
 
@@ -58,9 +58,14 @@ body {
   padding-left:1vw;
   padding-right:2vw
 }
+
+.marIcon{
+  margin-right: 8px!important;
+}
+
 #salonBackground {
 width: 100%;
-height: 35vw;
+height: 50vw;
 margin: 30px auto;
 position: static;
 background: no-repeat center;
@@ -68,7 +73,7 @@ background-color: yellow;
 }
 
 #square0, #square1, #square2, #square3, #square4, #square5,#square6{
-width: 15vw; 
+width: 18vw; 
 height: auto; 
 padding:1vw;
 background:#ffc107;
