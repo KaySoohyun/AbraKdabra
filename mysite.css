@@ -1,66 +1,75 @@
 
-body,h2,h3,h4 {
-  font-family: "Mali"; 
-  background-color: yellow;
-}
-h1,h5,h6{font-family: "Mali";}
-
-h2 {font-size: 2.3vw !important}
-h3 {font-size: 1.9vw !important}
-h4 {font-size: 1.6vw !important}
-h5 {font-size: 1.9vw !important}
-h6 {font-size: 1.5vw !important}
-
-.w3-row-padding img {margin-bottom: 12px}
-
-.w3-sidebar {background: #9c27b0;}
-
-.menu {display: none}
-
-.mySlides {display:none;}
-
-/* Add a left margin to the "page content" that matches the width of the sidebar */
-#main {margin-left: 11%}
-
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 992px) {
-  #main {margin-left: 0}
-  h1 {font-size: 5.2vw !important}
-  h2 {font-size: 4.2vw !important}
-  h3 {font-size: 3.4vw !important}
-  h4 {font-size: 2.9vw !important}
-  h5 {font-size: 3.2vw !important}
-  h6 {font-size: 3.5vw !important}
-  .w3-sidebar {width: 30% !important}
-  .iconTop {width: 20vw !important; padding-bottom:5vw;}
-  .iconBar {width: 15vw !important}
-  .w3-top {position: static}
-}
-
-/* 100% Image Width on Smaller Screens */
-/*@media only screen and (max-width: 700px){.modal-content {width: 100%}}*/
-
-.iconTop {width: 20vw; padding-bottom:1vw;}
-.iconBar {width: 4vw}
-
 body {
   background-image: url("graphics/site/backgroundBody.svg");
   background-repeat: repeat;
 }
 
-.imgTitle{
-  margin-top:16px !important;
-  margin-bottom:16px !important;
+body, h2, h3, h4 {
+  font-family: "Mali"; 
+  background-color: yellow;
+}
+h1, h5, h6 {font-family: "Mali";}
+h2 {font-size: 2.3vw !important;}
+h3 {font-size: 1.9vw !important;}
+h4 {font-size: 1.6vw !important;}
+h5 {font-size: 1.9vw !important;}
+h6 {font-size: 1.5vw !important;}
+
+#main {margin-left: 11%;}
+
+.w3-row-padding img {margin-bottom: 12px;}
+
+.w3-sidebar {background: #9c27b0;}
+
+.menu {display: none;}
+
+.mySlides {display: none;}
+
+.iconTop {width: 20vw; padding-bottom:1vw;}
+
+.iconBar {width: 4vw};
+
+.divSalon {margin-left:20vw;}
+
+.click {cursor: pointer;}
+
+.navBottom {
+  position: absolute;
+  top: 40%;
+  color: purple;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
 }
 
-.padFiestas{
-  background-color:yellow;
-  padding-left:1vw;
-  padding-right:2vw
+.imgTitle {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
 }
 
-.marIcon{
-  margin-right: 8px!important;
+.padFiestas {
+  background-color: yellow;
+  padding-left: 1vw;
+  padding-right: 2vw
+}
+
+.marIcon {
+  margin-right: 8px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  #main {margin-left: 0%;}
+  h1 {font-size: 5.2vw !important;}
+  h2 {font-size: 4.2vw !important;}
+  h3 {font-size: 3.4vw !important;}
+  h4 {font-size: 2.9vw !important;}
+  h5 {font-size: 3.2vw !important;}
+  h6 {font-size: 3.5vw !important;}
+  .w3-sidebar {width: 30% !important;}
+  .iconTop {width: 20vw !important; padding-bottom:5vw;}
+  .iconBar {width: 15vw !important;}
+  .w3-top {position: static;}
+  .divSalon {margin-left:15vw}
 }
 
 #salonBackground {
@@ -72,64 +81,68 @@ background: no-repeat center;
 background-color: yellow;
 }
 
-#square0, #square1, #square2, #square3, #square4, #square5,#square6{
+#square0, #square1, #square2, #square3, #square4, #square5,#square6 {
 width: 18vw; 
 height: auto; 
-padding:1vw;
-background:#ffc107;
-position:static;
+padding: 1vw;
+background: #ffc107;
+position: static;
 }
 
 /*Adultos*/
-#square0{
-top:35px;
-left:35px;
-transform:rotate(-10deg);
--o-transform:rotate(-10deg);
--moz-transform:rotate(-10deg);
--webkit-transform:rotate(-10deg);
+#square0 {
+top: 35px;
+left: 35px;
+transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-webkit-transform: rotate(-10deg);
 }
 
 /*Cama elastica*/
-#square1{
-bottom:30px;
-right:30px;
-transform:rotate(10deg);
--o-transform:rotate(10deg);
--moz-transform:rotate(10deg);
--webkit-transform:rotate(10deg);
+#square1 {
+bottom: 30px;
+right: 30px;
+transform: rotate(10deg);
+-o-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-webkit-transform: rotate(10deg);
 }
 
 /*Castillo*/
-#square2{
-top:20px;
-left:50px;
+#square2 {
+top: 20px;
+left: 50px;
 }
 
 /*Cocina*/
-#square3{
-top:140px;
-right:260px;
-transform:rotate(-10deg);
--o-transform:rotate(-10deg);
--moz-transform:rotate(-10deg);
--webkit-transform:rotate(-10deg);
+#square3 {
+top: 140px;
+right: 260px;
+transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-webkit-transform: rotate(-10deg);
 }
 
-/*Ninos*/
-#square4{
-top:20px;
-right:50px;
+/*Peques*/
+#square4 {
+top: 20px;
+right: 50px;
 }
 
 /*Trepador*/
-#square5{
-top:170px;
-left:250px;
+#square5 {
+top: 170px;
+left: 250px;
+transform: rotate(-10deg);
+-o-transform: rotate(-10deg);
+-moz-transform: rotate(-10deg);
+-webkit-transform: rotate(-10deg);
 }
 
 /*Salon*/
-#square6{
-top:170px;
-left:250px;
+#square6 {
+top: 170px;
+left: 250px;
 }
