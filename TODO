@@ -1,9 +1,18 @@
 TODO List
+
+- Cambiar W3.CSS por Bootstrap
 - Centrar iconos en sidebar
-- Bootstrap y w3
-- Imagen de fondo para Salon
-- Mejorar collage
-- Opciones de menu en fiestas
-- Horarios fuera del menu
 - Violeta muy oscuro
 - En celular sacar el hover de la navbar
+
+Salon
+- Crear una imagen de fondo
+- Mejorar collage de fotos
+- Agregar mas fotos
+
+Fiestas
+- Cambiar la barra de navegacion del menu de opciones
+- Colocar los horarios fuera del menu
+
+Contacto
+- Agregar formulario de contacto
