@@ -1,9 +1,9 @@
 # AbraKdabra
 
-### Pagina web para un salon de fiestas infantiles alojada en: [AbraKdabra](abrakdabraweb.com)
+### Pagina web para un salon de fiestas infantiles alojada en [abrakdabraweb.com](abrakdabraweb.com)
 
 
-###### Utilidades:
+Utilidades:
 
 * [W3.CSS](https://www.w3schools.com): Framework de CSS (con algunos retoques colocados en site.css).
 * [Inkscape](https://inkscape.org/es/): Editor de graficos vectoriales, libre y de codigo abierto.
