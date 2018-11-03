@@ -1,20 +1,9 @@
 TODO List
-
 - Centrar iconos en sidebar
 - Bootstrap y w3
 - Imagen de fondo para Salon
-
-position: static | relative | absolute | fixed | inherit | initial
-
-SITE
-
-imagen de fondo en salon
-mejorar collage
-
-opciones de menu en fiestas
-horarios fuera del menu
-cambiar opcion por fiesta
-
-violeta muy oscuro
-
-en celular sacar el hover de la navbar
+- Mejorar collage
+- Opciones de menu en fiestas
+- Horarios fuera del menu
+- Violeta muy oscuro
+- En celular sacar el hover de la navbar
